@@ -31,6 +31,17 @@ nehemiah-blueprint/
 
 ---
 
+## Available Study Modules
+
+Browse our chronological library of faith-rooted systemic analysis modules:
+
+{% for module in site.modules reversed %}
+*   **[{{ module.title }}]({{ module.url }})** — *Published: {{ module.date | date: "%Y-%m-%d" }}*
+    {% if module.tags %}Tags: *{{ module.tags | join: ", " }}*{% endif %}
+{% endfor %}
+
+---
+
 ## The Scripture Sandwich Framework
 
 The heart of this blueprint is a 45-minute learning session that honors your time and deepens your impact. We map the traditional Pastoral Cycle (See, Judge, Act) directly onto the Inductive Bible Study Method (Observation, Interpretation, Application) to move groups from historical context to immediate public advocacy.
