@@ -1,4 +1,8 @@
-# The Nehemiah Blueprint
+---
+layout: default
+title: "The Nehemiah Blueprint"
+---
+
 > An open-source, modular framework for faith-rooted systemic analysis.
 
 The Nehemiah Blueprint is a low-tech, high-utility monorepo designed to bridge timeless scriptural truths with modern macroeconomic realities. Inspired by Nehemiah’s historic audit of broken city systems and his direct confrontation of economic exploitation, this repository hosts a universal structural framework for generating 45-minute "Scripture Sandwich" study modules.
@@ -33,11 +37,11 @@ nehemiah-blueprint/
 
 ## Available Study Modules
 
-Browse our 5 most recent faith-rooted systemic analysis modules. For our complete historical library, visit the [Full Module Archive]({{ site.baseurl }}/archive).
+Browse our faith-rooted systemic analysis modules. For our complete historical library, visit the [Full Module Archive]({{ site.baseurl }}/archive/).
 
 {% assign sorted_modules = site.modules | reverse %}
-{% for module in sorted_modules limit: 5 %}
-*   **[{{ module.title }}]({{ site.url }}{{ site.baseurl }}{{ module.url }})** - Published: {{ module.date | date: "%Y-%m-%d" }}
+{% for module in sorted_modules %}
+*   **[{{ module.title }}]({{ site.baseurl }}{{ module.url }})** - Published: {{ module.date | date: "%Y-%m-%d" }}
     {% if module.tags %}Tags: *{{ module.tags | join: ", " }}*{% endif %}
 {% endfor %}
 

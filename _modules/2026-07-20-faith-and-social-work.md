@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "The Ethical Wall: Debt, Dignity, and Professional Boundaries"
+date: 2026-07-20
 tags: [ethics, economics, law]
 ---
 
