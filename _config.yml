@@ -2,6 +2,7 @@
 title: The Nehemiah Blueprint
 description: An open-source, modular framework for faith-rooted systemic analysis.
 theme: jekyll-theme-cayman
+baseurl: "/nehemiah-blueprint"
 
 # Collections Configuration for Flat-Folder Modules
 collections:
