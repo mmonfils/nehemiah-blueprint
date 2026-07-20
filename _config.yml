@@ -9,4 +9,12 @@ url: "https://mmonfils.github.io"
 collections:
   modules:
     output: true
-    permalink: /modules/:path/
+    permalink: /nehemiah-blueprint/modules/:path/
+
+# Defaults for Front Matter Configuration
+defaults:
+  - scope:
+      path: ""
+      type: modules
+    values:
+      layout: default

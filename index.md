@@ -37,7 +37,7 @@ Browse our 5 most recent faith-rooted systemic analysis modules. For our complet
 
 {% assign sorted_modules = site.modules | reverse %}
 {% for module in sorted_modules limit: 5 %}
-*   **[{{ module.title }}]({{ module.url }})** — *Published: {{ module.date | date: "%Y-%m-%d" }}*
+*   **[{{ module.title }}]({{ site.url }}{{ module.url }})** - Published: {{ module.date | date: "%Y-%m-%d" }}
     {% if module.tags %}Tags: *{{ module.tags | join: ", " }}*{% endif %}
 {% endfor %}
 
