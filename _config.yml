@@ -3,17 +3,10 @@ title: The Nehemiah Blueprint
 description: An open-source, modular framework for faith-rooted systemic analysis.
 theme: jekyll-theme-cayman
 baseurl: "/nehemiah-blueprint"
+url: "https://mmonfils.github.io"
 
 # Collections Configuration for Flat-Folder Modules
 collections:
   modules:
     output: true
     permalink: /modules/:path/
-
-# Defaults for Front Matter
-defaults:
-  - scope:
-      path: ""
-      type: modules
-    values:
-      layout: default
