@@ -33,9 +33,10 @@ nehemiah-blueprint/
 
 ## Available Study Modules
 
-Browse our chronological library of faith-rooted systemic analysis modules:
+Browse our 5 most recent faith-rooted systemic analysis modules. For our complete historical library, visit the [Full Module Archive]({{ site.baseurl }}/archive).
 
-{% for module in site.modules reversed %}
+{% assign sorted_modules = site.modules | reverse %}
+{% for module in sorted_modules limit: 5 %}
 *   **[{{ module.title }}]({{ module.url }})** — *Published: {{ module.date | date: "%Y-%m-%d" }}*
     {% if module.tags %}Tags: *{{ module.tags | join: ", " }}*{% endif %}
 {% endfor %}
